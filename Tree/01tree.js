@@ -54,7 +54,7 @@ class BinaryTree {
     }
 
 
-    deleteLeafNode = function (node){
+    #deleteLeafNode = function (node){
         let deleteNode = node;
         if(node.parent.data < node.data){
             node.parent.right = null;
@@ -66,7 +66,7 @@ class BinaryTree {
         }
     }
 
-    deleteOneChildNode = function(node){
+    #deleteOneChildNode = function(node){
         let deleteNode =  node;
         if(node.parent.data < node.data){
             node.parent.right = node.right || node.left;
@@ -95,11 +95,11 @@ class BinaryTree {
         if(!deleteNode) return -1;
         // leaf node
         if(deleteNode.right == null && deleteNode.left == null){
-            return this.deleteLeafNode(deleteNode)
+            return this.#deleteLeafNode(deleteNode)
         }
         // node of single child
         if(deleteNode.right == null || deleteNode.left == null){
-            return this.deleteOneChildNode(deleteNode);
+            return this.#deleteOneChildNode(deleteNode);
         }
 
         let temp = deleteNode.right;
