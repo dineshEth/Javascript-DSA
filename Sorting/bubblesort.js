@@ -5,7 +5,7 @@
  * to left if smaller
  */
 
-let arr = [80,60,20,55,42,16,10,15]
+let arr = [80,30,20,30,42,10,10,15]
 
 function bubblesort (arr = [] ) {
     if(arr.length == 0) return arr;

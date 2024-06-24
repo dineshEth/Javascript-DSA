@@ -7,7 +7,7 @@
  */
 
 
-let arr = [80,60,20,55,42,16,10,15]
+let arr = [80,10,20,10,42,20,10,15]
 
 function insertionSort(arr = []){
     if(arr.length == 0 || arr.length ==1 ) return arr;

@@ -2,7 +2,6 @@
 
 /**
  * Select a smaller element in each iteration and replace it at its proper position
- * 
  */
 
 function selectionsort (arr = []) {
@@ -20,7 +19,7 @@ function selectionsort (arr = []) {
     }
 }
 
-let arr = [80,60,20,55,42,16,10,15]
+let arr = [80,60,20,10,20,16,10,20]
 selectionsort(arr);
 
 console.log(arr);
